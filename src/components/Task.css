@@ -1,0 +1,60 @@
+.todo-list__item,
+.todo-list__done-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+  padding: 5px;
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.item__important {
+  flex-basis: 100%;
+  font-weight: bold;
+}
+.item__deadline,
+.item__btn {
+  flex-basis: 0.5;
+}
+.btn-task {
+  border: none;
+  padding: 2px 5px;
+  margin: 2px 2px 0 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+  box-shadow: 0 0 3px black;
+}
+.btn-task:hover {
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0 0 2px black;
+}
+.btn--edit {
+  color: rgb(4, 139, 4);
+  font-weight: bold;
+}
+.btn--done {
+  color: rgb(0, 132, 255);
+}
+.btn--delete {
+  color: rgb(241, 15, 15);
+}
+.item__deadline,
+.item__done-time {
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  .item__important {
+    flex-basis: 50%;
+  }
+  .item__deadline,
+  .item__btn {
+    flex-basis: 0.2;
+  }
+  .btn-task {
+    margin: 0 2px;
+  }
+}

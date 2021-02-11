@@ -1,0 +1,37 @@
+/*od 1024px można może zrobić kolumny z todo list i done*/
+/* przy mniejszej rozdzielczości można zrobić widok rozsuwany(pokaż zadania, pokaż wykonywane (może sortowanie)*/
+/*dokończ to a potem zrobisz może kolejną wersje*/
+.todo-list {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.todo-list--active {
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.todo-list__title {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.todo-list__empty {
+  text-align: center;
+}
+.todo-list__done-overflow {
+  text-align: center;
+  font-style: italic;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 640px) {
+  .todo-list__title {
+    font-size: 1.5rem;
+  }
+}
